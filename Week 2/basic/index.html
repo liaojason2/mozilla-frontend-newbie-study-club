@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=UTF-8>
+  <title>example</title>
+  <script>
+    /* 
+    window.addEventListener('load', () => {
+      const text = 'run script' // const 宣告之後不能再更改
+      document.querySelector('#content').textContent = text
+    })
+    */
+    // JS function
+    function run(event) {
+      text = 'run script'
+      document.querySelector('#content').textContent = 'test'
+    }
+    window.addEventListener('load', run)
+  </script>
+  <style>
+    .title .mark {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="text title"> hello world <!-- CSS selector -->
+    <span class="mark"> !! </span>
+  </div> <!-- 套用 text CSS 設定 -->
+  <div class="parentNode">
+    <div id="content"></div> <!-- 綁定 content script --> 
+  </div>
+</body>
+
+</html>
